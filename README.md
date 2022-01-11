@@ -40,6 +40,8 @@ Every 120 seconds, an AX.25 beacon is broadcasted:
 ![Screenshot 2022-01-11 025657.jpg]({{site.baseurl}}/Screenshot 2022-01-11 025657.jpg)
 - Note from Endurosat: The  used  scrambling  polynomial  is 1  +  X12  + X17.  This  means the  currently  transmitted  bit  is  the EXOR of the current data bit, plus the bits that have been transmitted 12 and 17 bits earlier. Likewise, the  unscrambling  operation  simply  EXORs  the  bit  received  now  with  those  sent  12  and  17  bits earlier. The unscrambler perforce requires 17 bits to synchronize.
 
+### Telemetry Packet Structure:
+
 ## GAS Team Ground Station:
 - List all of our equipment for receiving
 - Brief description of software we use
