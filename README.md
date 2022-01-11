@@ -77,7 +77,3 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 ### Image Packet Structure:
 The primary mission of GASPACS is to transmit down a clear image of the deployed AeroBoom. A raspberry pi camera onboard the CubeSat will photgraph the deployed boom. A [custom SSDV implementation](https://github.com/SmallSatGasTeam/ssdv) where the packet length is changed from 256 bytes to 128 bytes (to fit inside the Data Field 2 "Payload") is used to compress the images. The original SSDV packet structure is shown below. Note that the payload portion of the GASPACS SSDV implementation is shorted by 128 bytes, to allow a single SSDV packet to fit inside the Endurosat packet structure's Data Field 2.
 ![Screenshot 2022-01-11 032010.jpg]({{site.baseurl}}/Screenshot 2022-01-11 032010.jpg)
-
-
-## GAS Team Ground Station:
-- TO DO: Add List all of our equipment for receiving & brief description of software we use
