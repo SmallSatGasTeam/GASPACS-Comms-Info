@@ -48,7 +48,26 @@ Every 500 seconds, an audio beacon is broadcasted:
 - All telemetry packets fit inside of the Data Field 2 "Payload" portion of the Endurosat packet structure. GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 
 	**Attitude Data:**
+	- Collected at 1Hz for 30 minutes of every 24 hour period.
+    - Consists of all the data necessary to perform attitude determination calculations on the ground.
+    - Includes time, sun sensor, and magnetometer data.
+    - Structure:
+    ![Screenshot 2022-01-11 031118.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031118.jpg)
 
+	**Deployment Data:**
+    - Collected at 10-15 Hz for ~90 seconds during AeroBoom deployment.
+    - Includes time, accelerometer, and UV sensor data.
+    - Structure:
+    ![Screenshot 2022-01-11 031315.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031315.jpg)
+
+	**TT&C Data:**
+    - This is the "housekeeping" data that shows the satellite's health over time.
+    - Includes temperatures, battery voltages, solar panel power, and more.
+    - Structure:
+    ![Screenshot 2022-01-11 031517.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031517.jpg)
+	![Screenshot 2022-01-11 031528.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031528.jpg)
+
+    
 
 ## GAS Team Ground Station:
 - List all of our equipment for receiving
