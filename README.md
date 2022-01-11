@@ -40,6 +40,7 @@ Every 120 seconds, an AX.25 beacon is broadcasted:
 - Content: "Hello from the GASPACS CubeSat!"
 - Structure:
 ![Screenshot 2022-01-11 025657.jpg]({{site.baseurl}}/Screenshot 2022-01-11 025657.jpg)
+- The AX.25 protocol UI frame fits inside the Data Field 2 "Payload" and is surrounded by a Preamble and Postamble.
 - Note from Endurosat: The  used  scrambling  polynomial  is 1  +  X12  + X17.  This  means the  currently  transmitted  bit  is  the EXOR of the current data bit, plus the bits that have been transmitted 12 and 17 bits earlier. Likewise, the  unscrambling  operation  simply  EXORs  the  bit  received  now  with  those  sent  12  and  17  bits earlier. The unscrambler perforce requires 17 bits to synchronize.
 
 ### Audio Beacon Information:
