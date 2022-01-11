@@ -9,10 +9,16 @@ GASPACS was launched on 12/21/2021 on SpaceX CRS-24. GASPACS is currently aboard
 - Center frequency: 437.365 MHz
 - Baudrate: 9600
 - Modulation: 2GFSK
+- Polarization: Circular 
+	- Both RHCP and LCHP
+    - Polarization will change as GASPACS slowly rotates in space
+- TX Power: 1W
+- Satellite Antenna Gain: ~ 0 dBi, omnidirectional
 - AX.25 beacon every 120 seconds
 - Audio beacon every 300 seconds
 - Telemetry & images downlinked when passing over Logan, Utah
 
 ## CubeSat Communications Hardware:
 
--Radio: Endurosat 
+-Radio: [Endurosat UHF Transceiver](https://www.endurosat.com/cubesat-store/cubesat-communication-modules/uhf-transceiver-ii/)
+- Antenna: [Endurosat UHF Antenna](https://www.endurosat.com/cubesat-store/cubesat-antennas/uhf-antenna/)
