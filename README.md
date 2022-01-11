@@ -13,10 +13,11 @@ GASPACS was launched on 12/21/2021 on SpaceX CRS-24. GASPACS is currently aboard
 	- Both RHCP and LCHP
     - Polarization will change as GASPACS slowly rotates in space
 - TX Power: 1W
-- Satellite Antenna Gain: ~ 0 dBi, omnidirectional
+- Antenna Gain: ~ 0 dBi, omnidirectional
 - AX.25 beacon every 120 seconds
 - Audio beacon every 300 seconds
 - Telemetry & images downlinked when passing over Logan, Utah
+- LEO orbit, deployed from ISS
 
 ## CubeSat Communications Hardware:
 
