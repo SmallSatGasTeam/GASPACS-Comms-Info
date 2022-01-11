@@ -5,5 +5,14 @@ GASPACS stands for **G**et **A**way **S**pecial **P**assive **A**ttitude **C**on
 
 GASPACS was launched on 12/21/2021 on SpaceX CRS-24. GASPACS is currently aboard the International Space Station (ISS), with deployment into orbit via the NanoRacks CubeSat Deployer (NRCSD) scheduled for the week of 1/24/2022. This page will be updated after deployment with information on tracking GASPACS and ongoing mission operations.
 
-## CubeSat Communications Hardware
+## RF Specifications:
+- Center frequency: 437.365 MHz
+- Baudrate: 9600
+- Modulation: 2GFSK
+- AX.25 beacon every 120 seconds
+- Audio beacon every 300 seconds
+- Telemetry & images downlinked when passing over Logan, Utah
 
+## CubeSat Communications Hardware:
+
+-Radio: Endurosat 
