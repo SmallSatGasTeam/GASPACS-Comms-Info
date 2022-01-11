@@ -66,6 +66,7 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 ![Screenshot 2022-01-11 031315.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031315.jpg)
 
 **TT&C Data:**
+- Collected every 2 minutes throughout the mission.
 - This is the "housekeeping" data that shows the satellite's health over time.
 - Includes temperatures, battery voltages, solar panel power, and more.
 - Structure:
