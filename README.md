@@ -30,7 +30,7 @@ GASPACS was launched on 12/21/2021 on SpaceX CRS-24. GASPACS is currently aboard
 - All packets transmitted by GASPACS utilize the Endurosat radio packet structure, containing a preamble, sync word, payload, and CRC16:
 ![Screenshot 2022-01-11 025351.jpg]({{site.baseurl}}/Screenshot 2022-01-11 025351.jpg)
 ![Screenshot 2022-01-11 025456.jpg]({{site.baseurl}}/Screenshot 2022-01-11 025456.jpg)
-
+     
 ### AX.25 Packet Structure:
 Every 120 seconds, an AX.25 beacon is broadcasted:
 - Dest. Callsign: CQ
