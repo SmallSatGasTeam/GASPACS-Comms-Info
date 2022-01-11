@@ -47,7 +47,9 @@ Every 500 seconds, an audio beacon is broadcasted:
 - The audio beacon consists of the N7GAS callsign in morse code, followed by "The Scotsman" tune.
 
 ### Telemetry Packet Structure:
-_**All telemetry packets fit inside of the Data Field 2 "Payload" portion of the Endurosat packet structure.**_ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
+_**All telemetry packets fit inside of the Data Field 2 "Payload" portion of the Endurosat packet structure.**_ 
+
+GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 
 **Attitude Data:**
 - Collected at 1Hz for 30 minutes of every 24 hour period.
