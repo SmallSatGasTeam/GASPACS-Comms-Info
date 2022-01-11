@@ -40,7 +40,15 @@ Every 120 seconds, an AX.25 beacon is broadcasted:
 ![Screenshot 2022-01-11 025657.jpg]({{site.baseurl}}/Screenshot 2022-01-11 025657.jpg)
 - Note from Endurosat: The  used  scrambling  polynomial  is 1  +  X12  + X17.  This  means the  currently  transmitted  bit  is  the EXOR of the current data bit, plus the bits that have been transmitted 12 and 17 bits earlier. Likewise, the  unscrambling  operation  simply  EXORs  the  bit  received  now  with  those  sent  12  and  17  bits earlier. The unscrambler perforce requires 17 bits to synchronize.
 
+### Audio Beacon Information:
+Every 500 seconds, an audio beacon is broadcasted:
+- The audio beacon consists of the N7GAS callsign in morse code, followed by "The Scotsman" tune.
+
 ### Telemetry Packet Structure:
+- All telemetry packets fit inside of the Data Field 2 "Payload" portion of the Endurosat packet structure. GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
+
+	**Attitude Data:**
+
 
 ## GAS Team Ground Station:
 - List all of our equipment for receiving
