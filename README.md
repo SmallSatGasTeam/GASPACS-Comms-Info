@@ -25,4 +25,9 @@ GASPACS was launched on 12/21/2021 on SpaceX CRS-24. GASPACS is currently aboard
 - Antenna: [Endurosat UHF Antenna](https://www.endurosat.com/cubesat-store/cubesat-antennas/uhf-antenna/)
 
 ## Packet Structure:
+- All packets transmitted by GASPACS utilize the Endurosat radio packet structure, containing a preamble, sync word, payload, and CRC16:
 
+
+## GAS Team Ground Station:
+- List all of our equipment for receiving
+- Brief description of software we use
