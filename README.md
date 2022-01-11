@@ -1,2 +1,3 @@
-# GASPACS-Comms-Info
+# GASPACS CubeSat Communications Information
 Testing
+
