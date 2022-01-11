@@ -76,5 +76,4 @@ The primary mission of GASPACS is to transmit down a clear image of the deployed
 
 
 ## GAS Team Ground Station:
-- List all of our equipment for receiving
-- Brief description of software we use
+- TO DO: Add List all of our equipment for receiving & brief description of software we use
