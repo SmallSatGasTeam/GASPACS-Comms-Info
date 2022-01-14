@@ -59,6 +59,11 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 - Structure:
 ![Screenshot 2022-01-11 031118.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031118.jpg)
 
+- **Sample Attitude Hex Data (This is the Data Field 2 Content):**
+	- Note: All sun sensor values are "0" and all magnetometer values are "101.0"
+```
+474153504143530061807d14000000000000000000000000000000000000000042ca000042ca000042ca000047415350414353
+```
 **Deployment Data:**
 - Collected at 10-15 Hz for ~90 seconds during AeroBoom deployment.
 - Includes time, accelerometer, and UV sensor data.
@@ -76,6 +81,10 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 - **Sample TTNC Hex Data (This is the Data Field 2 Content):**    
 ```
 474153504143530161832dd002001700000000000000000000000042473333431c0000431c0000431c000040c333334120000040c333333ff00000408000004080000040d00000403333334033333340d00000403333334033333340d000004033333347415350414353
+```
+- The decoded values are:
+```
+1, 1635934505, 2, 23, 0.0, 0.0, 0.0, 50.79999923706055, 156.0, 156.0, 156.0, 6.099999904632568, 10.0, 6.099999904632568, 1.875, 4.0, 4.0, 6.5, 2.799999952316284, 2.799999952316284, 6.5, 2.799999952316284, 2.799999952316284, 6.5, 2.799999952316284
 ```
 
 ### Image Packet Structure:
