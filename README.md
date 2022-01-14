@@ -60,9 +60,12 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 ![Screenshot 2022-01-11 031118.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031118.jpg)
 
 - **Sample Attitude Hex Data (This is the Data Field 2 Content):**
-	- Note: All sun sensor values are "0" and all magnetometer values are "101.0"
 ```
 474153504143530061807d14000000000000000000000000000000000000000042ca000042ca000042ca000047415350414353
+```
+- The decoded values are:
+```
+
 ```
 **Deployment Data:**
 - Collected at 10-15 Hz for ~90 seconds during AeroBoom deployment.
