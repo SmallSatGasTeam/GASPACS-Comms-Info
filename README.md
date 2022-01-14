@@ -67,6 +67,7 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 ```
 0, 1635810580, 0.0, 0.0, 0.0, 0.0, 0.0, 101.0, 101.0, 101.0
 ```
+
 **Deployment Data:**
 - Collected at 10-15 Hz for ~90 seconds during AeroBoom deployment.
 - Includes time, accelerometer, and UV sensor data.
