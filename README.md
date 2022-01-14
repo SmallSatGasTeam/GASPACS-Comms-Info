@@ -65,7 +65,7 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 - Structure:
 ![Screenshot 2022-01-11 031315.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031315.jpg)
 
-**TT&C Data:**
+**TTNC Data:**
 - Collected every 2 minutes throughout the mission.
 - This is the "housekeeping" data that shows the satellite's health over time.
 - Includes temperatures, battery voltages, solar panel power, and more.
@@ -73,7 +73,11 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 ![Screenshot 2022-01-11 031517.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031517.jpg)
 ![Screenshot 2022-01-11 031528.jpg]({{site.baseurl}}/Screenshot 2022-01-11 031528.jpg)
 
-    
+- **Sample TTNC Hex Data (This is the Data Field 2 Content):**    
+```
+474153504143530161832dd002001700000000000000000000000042473333431c0000431c0000431c000040c333334120000040c333333ff00000408000004080000040d00000403333334033333340d00000403333334033333340d000004033333347415350414353
+```
+
 ### Image Packet Structure:
 - The primary mission of GASPACS is to transmit down a clear image of the deployed AeroBoom. A raspberry pi camera onboard the CubeSat will photgraph the deployed boom. 
 - A [custom SSDV implementation](https://github.com/SmallSatGasTeam/ssdv) where the packet length is changed from 256 bytes to 128 bytes (to fit inside the Data Field 2 "Payload") is used to compress the images. 
@@ -82,7 +86,7 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 - Note that the payload portion of the GASPACS SSDV implementation is shorted by 128 bytes, to allow a single SSDV packet to fit inside the Endurosat packet structure's Data Field 2.
 ![Screenshot 2022-01-11 032010.jpg]({{site.baseurl}}/Screenshot 2022-01-11 032010.jpg)
 
-**Sample Image Packet Hex Data (This is the Data Field 2 content):**
+- **Sample Image Packet Hex Data (This is the Data Field 2 content):**
 ```
 556604f02a5b020000281e00000000e1f65284c53b70a5dc0f6ad0c84c52d191ef46e1e94007414dfe2a4249340a606ba9f968a621f947d29e2900b4d20337d29d484503241c8a7638a8c3714e04d2014ad331cd3cf2314cf2fe6077695507cf23592c439b6a02af675f65c16a131e978af017ddcdfa6ac69d96c8bd1be990b1
 ```
