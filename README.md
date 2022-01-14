@@ -82,7 +82,11 @@ GASPACS has three types of telemetry packets: Attitude, Deployment, and TT&C
 - Note that the payload portion of the GASPACS SSDV implementation is shorted by 128 bytes, to allow a single SSDV packet to fit inside the Endurosat packet structure's Data Field 2.
 ![Screenshot 2022-01-11 032010.jpg]({{site.baseurl}}/Screenshot 2022-01-11 032010.jpg)
 
-**Sample Image Packet Hex Data (This is the Data Field 2 content):** 556604f02a5b020000281e00000000e1f65284c53b70a5dc0f6ad0c84c52d191ef46e1e94007414dfe2a4249340a606ba9f968a621f947d29e2900b4d20337d29d484503241c8a7638a8c3714e04d2014ad331cd3cf2314cf2fe6077695507cf23592c439b6a02af675f65c16a131e978af017ddcdfa6ac69d96c8bd1be990b1
+**Sample Image Packet Hex Data (This is the Data Field 2 content):**
+```
+556604f02a5b020000281e00000000e1f65284c53b70a5dc0f6ad0c84c52d191ef46e1e94007414dfe2a4249340a606ba9f968a621f947d29e2900b4d20337d29d484503241c8a7638a8c3714e04d2014ad331cd3cf2314cf2fe6077695507cf23592c439b6a02af675f65c16a131e978af017ddcdfa6ac69d96c8bd1be990b1
+```
+
 
 ## GAS Team Ground Station:
 - TO DO: Add List all of our equipment for receiving & brief description of software we use
