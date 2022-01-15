@@ -19,6 +19,7 @@ GASPACS was launched on 12/21/2021 on SpaceX CRS-24. GASPACS is currently aboard
 - AX.25 beacon every 120 seconds
 - Audio beacon every 300 seconds
 - Telemetry & images downlinked when passing over Logan, Utah
+- Additional telemetry & images can be scheduled over compatible ground stations. Please email coordinator@gas.usu.edu with your request.
 - Telemetry packets use custom structure (described below)
 - Image packets use SSDV format (described below)
 - LEO orbit, deployed from ISS
