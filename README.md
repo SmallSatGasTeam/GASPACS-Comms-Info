@@ -45,7 +45,7 @@ Every 120 seconds, an AX.25 beacon is broadcasted:
 - Note from Endurosat: The  used  scrambling  polynomial  is 1  +  X12  + X17.  This  means the  currently  transmitted  bit  is  the EXOR of the current data bit, plus the bits that have been transmitted 12 and 17 bits earlier. Likewise, the  unscrambling  operation  simply  EXORs  the  bit  received  now  with  those  sent  12  and  17  bits earlier. The unscrambler perforce requires 17 bits to synchronize.
 - **Sample AX.25 Packet IQ Data:**
 - [WAV File with IQ Data](https://github.com/SmallSatGasTeam/GASPACS-Comms-Info/blob/main/GASPACS_AX25_437365000Hz_IQ.wav)
-- This has been successfully decoded by PE0SAT using [this GASPACS.yml file](https://github.com/SmallSatGasTeam/GASPACS-Comms-Info/blob/main/GASPACS.yml) and gr_satellites:
+- This Wav file has been successfully decoded by PE0SAT using [this GASPACS.yml file](https://github.com/SmallSatGasTeam/GASPACS-Comms-Info/blob/main/GASPACS.yml) and gr_satellites:
 ```
 gr_satellites GASPACS.yml --wavfile GASPACS_48K_AF.wav --samp_rate 48e3 --disable_dc_block --hexdump
 ```
