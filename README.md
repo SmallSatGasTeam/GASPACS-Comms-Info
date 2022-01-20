@@ -43,6 +43,10 @@ Every 120 seconds, an AX.25 beacon is broadcasted:
 ![Screenshot 2022-01-11 025657.jpg]({{site.baseurl}}/Screenshot 2022-01-11 025657.jpg)
 - The AX.25 protocol UI frame fits inside the Data Field 2 "Payload" and is surrounded by a Preamble and Postamble.
 - Note from Endurosat: The  used  scrambling  polynomial  is 1  +  X12  + X17.  This  means the  currently  transmitted  bit  is  the EXOR of the current data bit, plus the bits that have been transmitted 12 and 17 bits earlier. Likewise, the  unscrambling  operation  simply  EXORs  the  bit  received  now  with  those  sent  12  and  17  bits earlier. The unscrambler perforce requires 17 bits to synchronize.
+- **Sample AX.25 Hex Data (This is the Data Field 2 Content):**
+```
+FEF16E90A0BCA56AFAF1FECE452A269801C2E81B1915B204A913F2F19166885351E471E3966F9A989011A5BE5DD1E0A01161899F4E13F6E036864C985076
+```
 
 ### Audio Beacon Information:
 Every 500 seconds, an audio beacon is broadcasted:
