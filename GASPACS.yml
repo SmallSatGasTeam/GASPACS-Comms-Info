@@ -1,0 +1,13 @@
+name: GASPACS
+norad: 99999
+data:
+  &tlm ax25 TLM:
+    telemetry: ax25
+transmitters:
+  9k6 FSK downlink:
+    frequency: 437.481e+6
+    modulation: FSK
+    baudrate: 9600
+    framing: AX.25 G3RUH
+    data:
+    - *tlm
