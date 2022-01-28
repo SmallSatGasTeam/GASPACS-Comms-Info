@@ -21,7 +21,7 @@ GASPACS is in orbit and fully operational!! Several images, and telemetry data h
 6. Play the audio recording, and watch as packets are decoded in the soundmodem program.
 7. Download the GASPACS decoder software: [https://github.com/SmallSatGasTeam/GASPACS-Comms-Info/tree/main/GASPACS-Receive-Data-Files](https://github.com/SmallSatGasTeam/GASPACS-Comms-Info/tree/main/GASPACS-Receive-Data-Files)
 8. Install the GAS team fork of SSDV: [https://github.com/SmallSatGasTeam/ssdv](https://github.com/SmallSatGasTeam/ssdv)
-9. Edit line 329 of decode.py to point to your SSDV installation
+9. Edit line 329 of decode.py to point to the full PATH/FILENAME of your SSDV executable
 10. Test the decoder software by moving the file "Example-W7KKE-soundmodem-ouput.txt" into the "new" folder, and run the decode.py script.
 	- If all goes well, you should see a lot of packets printed to the console, and there will now be a "0" folder in the "Pictures" folder, which will contain a .bin file, and the decoded .jpeg! The Example .txt file will be moved into the "old" folder. To decode it again, simply move the .txt file back into the "new" folder.
 11. To demodulate and decode your own recording: simply move your soundmodem log .txt file into the "new" folder, and run decode.py.
