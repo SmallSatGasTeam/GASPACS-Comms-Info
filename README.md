@@ -9,7 +9,7 @@ GASPACS was launched on 12/21/2021 on SpaceX CRS-24. GASPACS is currently aboard
 GASPACS is in orbit and fully operational!! Several images, and telemetry data have been received. For updates and copies of the pictures, see our twitter: twitter.com/GASPACS_CubeSat
 
 # HOW TO DEMODULATE/DECODE GASPACS IMAGES AND TELEMETRY:
-## Note: this has only been tested to work on Windows 10. It should work on linux as well, but there may be a few small issues.
+## Note: this has only been tested to work on Windows 10. It should work on linux as well, but it is not tested.
 1. GASPACS only transmits images and telemetry by command. The GAS team can schedule downlinks over other ground stations. If you would like us to attempt a downlink over your ground station, email coordinator@gas.usu.edu
 2. Record a GASPACS observation containing image or telemetry downlink (or find a recording)
 	- An example recording that has been succesfully turned into an image can be found here: [https://network.satnogs.org/observations/5365011/](https://network.satnogs.org/observations/5365011/)
