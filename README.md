@@ -6,7 +6,7 @@ GASPACS stands for **G**et **A**way **S**pecial **P**assive **A**ttitude **C**on
 GASPACS was launched on 12/21/2021 on SpaceX CRS-24. GASPACS is currently aboard the International Space Station (ISS), with deployment into orbit via the NanoRacks CubeSat Deployer (NRCSD) scheduled for the week of 1/24/2022. This page will be updated after deployment with information on tracking GASPACS and ongoing mission operations.
 
 # UPDATE: 1/28/2022!!
-GASPACS is in orbit and fully operational!! Several images, and telemetry data have been received. For updates and copies of the pictures, see our twitter: twitter.com/GASPACS_CubeSat
+GASPACS is in orbit and fully operational!! Several images, and telemetry data have been received. For updates and copies of the pictures, see: [twitter.com/GASPACS_CubeSat](twitter.com/GASPACS_CubeSat)
 
 # HOW TO DEMODULATE/DECODE GASPACS IMAGES AND TELEMETRY:
 ## Note: this has only been tested to work on Windows 10. It should work on linux as well, but it is not tested.
