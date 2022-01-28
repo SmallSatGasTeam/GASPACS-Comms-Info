@@ -5,6 +5,30 @@ GASPACS stands for **G**et **A**way **S**pecial **P**assive **A**ttitude **C**on
 
 GASPACS was launched on 12/21/2021 on SpaceX CRS-24. GASPACS is currently aboard the International Space Station (ISS), with deployment into orbit via the NanoRacks CubeSat Deployer (NRCSD) scheduled for the week of 1/24/2022. This page will be updated after deployment with information on tracking GASPACS and ongoing mission operations.
 
+# UPDATE: 1/28/2022!!
+GASPACS is in orbit and fully operational!! Several images, and telemetry data have been received. For updates and copies of the pictures, see our twitter: twitter.com/GASPACS_CubeSat
+
+# HOW TO DEMODULATE/DECODE GASPACS IMAGES AND TELEMETRY:
+## Note: this has only been tested to work on Windows 10. It should work on linux as well, but there may be a few small issues.
+1. GASPACS only transmits images and telemetry by command. The GAS team can schedule downlinks over other ground stations. If you would like us to attempt a downlink over your ground station, email coordinator@gas.usu.edu
+2. Record a GASPACS observation containing image or telemetry downlink (or find a recording)
+	- An example recording that has been succesfully turned into an image can be found here: [https://network.satnogs.org/observations/5365011/](https://network.satnogs.org/observations/5365011/)
+3. Download the soundmodem made by UZ7HO: [https://uz7.ho.ua/gaspacs.zip](https://uz7.ho.ua/gaspacs.zip)
+	- Note: gr-satellites has also been able to demodulate GASPACS packets, however the output format of the packets has not been tested to work with the GASPACS decoding script.
+4. Route your computer's audio output into its audio input, so you can have the recorded audio as an input for the soundmodem program.
+	- We used the VB-Audio software which worked on Windows: [https://vb-audio.com/Cable/](https://vb-audio.com/Cable/)
+5. Run the soundmodem program. Under Settings, click "Open monitor log file". Save the log file somewhere you'll remember (make sure the log file is a .txt file).
+6. Play the audio recording, and watch as packets are decoded in the soundmodem program.
+7. Download the GASPACS decoder software: [https://github.com/SmallSatGasTeam/GASPACS-Comms-Info/tree/main/GASPACS-Receive-Data-Files](https://github.com/SmallSatGasTeam/GASPACS-Comms-Info/tree/main/GASPACS-Receive-Data-Files)
+8. Install the GAS team fork of SSDV: [https://github.com/SmallSatGasTeam/ssdv](https://github.com/SmallSatGasTeam/ssdv)
+9. Edit line 329 of decode.py to point to your SSDV installation
+10. Test the decoder software by moving the file "Example-W7KKE-soundmodem-ouput.txt" into the "new" folder, and run the decode.py script.
+	- If all goes well, you should see a lot of packets printed to the console, and there will now be a "0" folder in the "Pictures" folder, which will contain a .bin file, and the decoded .jpeg! The Example .txt file will be moved into the "old" folder. To decode it again, simply move the .txt file back into the "new" folder.
+11. To demodulate and decode your own recording: simply move your soundmodem log .txt file into the "new" folder, and run decode.py.
+	- This program will work with images, TTNC data, Attitude Data, and Deployment Data from GASPACS. Images are placed in the "Pictures" folder under their appropriate image ID, and data is stored in the "allData.csv" file. 
+    - This program can handle missing image packets, out of order packets, and images received over multiple different transmissions. It will automatically combine picture packets from multiple .txt files, so if you receive half of the picture in one transmission, and the other half in another, it will put them together into a final .jpeg!
+    
+
 ## RF Specifications:
 - Center frequency: 437.365 MHz
 - Baudrate: 9600 bps
