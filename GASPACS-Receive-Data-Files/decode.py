@@ -25,6 +25,7 @@ class decodeData():
     self.csvFilePath = './allData.csv'
     self.backupCsvFilePath = './backupAllData.csv'
     self.pictureFolder = './Pictures/'
+    self.packetNumFilePath = './lastPacketNum.txt'
     # Set up logging
 
     # Set up logging
@@ -74,7 +75,16 @@ class decodeData():
 
                 if len(validSSDVPackets) > 0:
                   self.processPicture(validSSDVPackets)
-                  self.writePicture()
+                  #self.writePicture()
+                    
+                  # Log current picture number and last line number
+                  # Save to text file so automagic can use it
+                  #self.logger.info("Picture Number: %d", self.folderNum)
+                  self.logger.info("Last Packet Number: %d", self.packetNumber)
+                  packetNumFile = open(self.packetNumFilePath, "w")
+                  packetNumFile.write(str(self.packetNumber))
+                  packetNumFile.close()
+
 
             # Copy file from "new" folder to "old" folder, and remove it from the "new" folder
             shutil.copy(newFilePath, oldFilePath)
@@ -246,7 +256,7 @@ class decodeData():
       binFile = open(self.binFilePath, 'rb')
       previousBin = True
     except:
-      self.logger.info("Failed to open .bin file")
+      self.logger.info("Failed to open .bin file (nominal to see this once per run)")
       previousBin = False
       #If there is no bin file to read, we do not want to try and make an list out of a file that doesn't exist. We just want to start adding packets to packetList.
     if previousBin:
@@ -301,10 +311,11 @@ class decodeData():
     self.previousFolderNum = self.folderNum
     for picturePacket in validSSDVPackets:
       try:
-        packetNumber = int(picturePacket[14:18], 16) #gets the packet number
-        self.packetList[packetNumber] = picturePacket #puts the packet into the correct index of the list
+        self.packetNumber = int(picturePacket[14:18], 16) #gets the packet number
+        self.packetList[self.packetNumber] = picturePacket #puts the packet into the correct index of the list
       except:
         self.logger.info("Invalid packet Number: " + str(picturePacket))
+    
 
 
   def writePicture(self):
